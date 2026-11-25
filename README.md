@@ -28,14 +28,14 @@ Python 3.12 was used. From a fresh checkout:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install torch==2.9.1 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
 python -m pip install -r requirements.txt
 python predict.py --sample 0
 python verify_artifacts.py
 python -m unittest discover -s tests -v
 ```
 
-The CPU-wheel command is intended for Linux/Windows. On macOS, install the standard `torch==2.9.1` wheel with `python -m pip install -r requirements.txt`; the training script still uses the CPU. This project has been executed on Linux; a Mac run is not claimed.
+The CPU-wheel command is intended for Linux/Windows. On macOS, install the standard `torch==2.15.0` wheel with `python -m pip install -r requirements.txt`; the training script still uses the CPU. This project has been executed on Linux; a Mac run is not claimed.
 
 Reproduce training in a **new** output directory:
 
@@ -69,6 +69,8 @@ python make_figures.py
 11 Python tests cover invalid inputs, dataset integrity, split isolation, JSON round trips, export validation, overwrite protection and result consistency. `verify_artifacts.py` recomputes both models’ test metrics and all saved predictions from their exported weights. `node tests/browser-parity.mjs` checks the browser implementation against PyTorch on all 1,797 test images (Node 22 or newer).
 
 GitHub Actions runs these checks and a fresh fixed-seed training run with read-only repository permissions. The badge links to the actual run status.
+
+[Security policy](SECURITY.md) · [Dependency upgrade and validation](docs/SECURITY-MAINTENANCE.md)
 
 ## Scope and provenance
 
