@@ -74,7 +74,7 @@ GitHub Actions runs these checks and a fresh fixed-seed training run with read-o
 
 This is a small learning and portfolio project, not a production recognition service. It has one dataset and seed, no calibrated uncertainty, no cross-validation study and no real-world handwriting evaluation. Later experiments should use a fresh holdout when making decisions based on these published errors.
 
-Prepared for **Mustafa Al Azzawi** with Codex assistance, following his choice of a simple PyTorch classifier with measured results and error analysis. The scripts and reported experiment were executed in the assistant’s Linux environment. This is a new project, not a republished university submission. Mustafa’s earlier computer-vision coursework is separate.
+Prepared for **Mustafa Al Azzawi** with Codex assistance, following his choice of a simple PyTorch classifier with measured results and error analysis. The scripts and reported experiment were executed in the assistant’s Linux environment. This is an independent personal portfolio project.
 
 Data: Alpaydin, E. & Kaynak, C. (1998), *Optical Recognition of Handwritten Digits*, UCI Machine Learning Repository, [DOI: 10.24432/C50P49](https://doi.org/10.24432/C50P49), licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). [Dataset provenance and transformations](data/README.md).
 
